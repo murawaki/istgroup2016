@@ -6,11 +6,11 @@ Requirements:
 
 >>> from fio import KyTea
 >>> kytea = KyTea()
->>> sent = kytea.get_wseq(u"³°¹ñ¿Í»²À¯¸¢")
+>>> sent = kytea.get_wseq(u"å¤–å›½äººå‚æ”¿æ¨©")
 >>> sent.wseg_scores
 [-1.60124, 2.69359, 0.422593, -0.503634, 0.819813]
 
-The 1st item -1.60124 is the score for the boundary between ³° and ¹ñ.
+The 1st item -1.60124 is the score for the boundary between å¤– and å›½.
 The negative value suggests KyTea will not place a boundary at this point.
 
 You can specify KyTea's path and/or model path.
@@ -42,11 +42,11 @@ Requirements:
      % python scripts/list_article_titles.py $(CDBDIR) > jawiki.titles.txt
 
 
-fetching the content of the article "³°¹ñ¿Í»²À¯¸¢"
+fetching the content of the article "å¤–å›½äººå‚æ”¿æ¨©"
 
 >>> from mwlib.cdb.cdbwiki import WikiDB
 >>> db = WikiDB("jawiki-20150512", lang="ja")
->>> print db.reader[u"³°¹ñ¿Í»²À¯¸¢"]
+>>> print db.reader[u"å¤–å›½äººå‚æ”¿æ¨©"]
 
 scripts/parse_mediawiki.py is an example of how to use mwlib to parse wikitext.
 
