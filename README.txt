@@ -27,8 +27,8 @@ Requirements:
       NOTE: the latest release (version 0.15.14) has not supported localized redirects yet
     % cd mwlib
     % python setup.py install
-- mwlib.cdb
-    % pip install mwlib.cdb
+- mwlib.cdb (the option --egg is mandatory to avoid name collision)
+    % pip install --egg mwlib.cdb
 
 
   1. Download an XML dump of Japanese Wikipedia jawiki-201?????-pages-meta-current.xml.bz2
